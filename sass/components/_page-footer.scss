@@ -1,0 +1,15 @@
+.page-footer {
+    padding: 60px 0;
+
+    background-color: $bcg-hero;
+}
+
+.page-footer__container {
+    display: flex;
+}
+
+.page-footer__logo {
+    margin-bottom: 20px;
+
+    color: $white-text;
+}

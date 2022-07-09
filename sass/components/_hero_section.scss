@@ -1,0 +1,64 @@
+.hero-section {
+    // margin: 0 auto;
+    // padding: 200px 0;
+    margin-right: auto;
+    margin-left: auto;
+
+    max-width: 1600px;
+
+    background-color: $bcg-hero;
+
+    text-align: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+        @media screen and (min-width: 320px) {
+                padding-top: 118px;
+                padding-bottom: 118px;
+        
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/mobile-header.jpg);
+        
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                        url(../images/mobile-header-2x.jpg);
+                    background-size: cover;
+                }
+            }
+        
+            @media screen and (min-width: 760px) {
+                padding-top: 118px;
+                padding-bottom: 118px;
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../images/tablet-header.jpg);
+        
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)), url(../images/tablet-header-2x.jpg);
+                    background-size: cover;
+                }
+            }
+        
+            @media screen and (min-width: 1200px) {
+                padding-top: 200px;
+                padding-bottom: 200px;
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../images/desktop-header.jpg);
+        
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)), url(../images/desktop-header-2x.jpg);
+                    background-size: cover;
+                }
+            }
+    
+    }

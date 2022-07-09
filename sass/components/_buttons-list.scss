@@ -1,0 +1,38 @@
+.buttons-list {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.buttons-list__filter {
+    padding: 6px 22px;
+
+    color: $header-text;
+    background-color: $bcg-button;
+    border: 0mm;
+    border-radius: 4px;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+
+    transition: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $white-text;
+        background-color: $accent;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+}
+
+.buttons-list__item:not(:last-child) {
+    margin-right: 8px;
+}

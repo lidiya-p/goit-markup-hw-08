@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+
+    color: #757575;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.title {
+    margin: 0;
+    margin-bottom: 50px;
+
+    color: $header-text;
+
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
+

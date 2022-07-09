@@ -1,0 +1,31 @@
+.work {
+    padding-bottom: 94px;
+}
+
+.work__item {
+    position: relative;
+    z-index: 1;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.work__text {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background-color: #2F303A80;
+}

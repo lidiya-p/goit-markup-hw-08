@@ -1,0 +1,25 @@
+.contacts-title {
+    display: none;
+}
+
+.contact-list {
+    display: inline-block;
+    list-style-type: none;
+
+    font-style: normal;
+    line-height: 1.7;
+
+    margin-right: 70px;
+}
+
+.contact-list__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.contact-list__link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-list__text {
+    color: $white-text;
+}

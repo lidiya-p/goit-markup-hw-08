@@ -1,0 +1,38 @@
+.clients {
+    padding: 94px 0;
+}
+
+.clients__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients__logo {
+    width: 106px;
+    height: 60px;
+
+    fill: currentColor;
+}
+
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+
+    color: $icon-fill;
+    background-color: $bcg-main;
+    border: 1px solid $icon-fill;
+    border-radius: 4px;
+
+    transition-property: color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: $icon-bckg-hover;
+        color: $icon-bckg-hover;
+    }
+}

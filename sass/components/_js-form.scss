@@ -1,0 +1,122 @@
+.js-form__title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+
+    color: $header-text;
+}
+
+.js-form__field {
+    position: relative;
+
+    margin-bottom: 10px;
+
+    color: $header-text;
+}
+
+.js-form__label {
+    display: flex;
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: $primary-text;
+}
+
+.js-form__input {
+    z-index: 1;
+
+    margin: 0;
+    padding: 11px 42px;
+    width: 100%;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:not(:placeholder-shown) {
+        border-color: $accent;
+    }
+
+    &::placeholder {
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.js-form__icon {
+    position: absolute;
+    display: inline-block;
+
+    top: 50%;
+    left: 12px;
+
+    z-index: 2;
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .js-form__input:hover+&,
+    .js-form__input:focus+& {
+            color: $icon-bckg-hover;
+        }
+}
+
+.comment {
+    margin-bottom: 20px;
+}
+
+.textarea {
+    display: block;
+    resize: none;
+    height: 120px;
+    padding: 12px 16px;
+}
+
+.js-form__checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.js-form__checkbox-label {
+    display: inline-block;
+    margin-left: 8px;
+    line-height: 1.7;
+}
+
+.js-form__agreement-link {
+    line-height: 1.7;
+    text-decoration-line: underline;
+    color: $accent
+}
+
+.js-form__checkbox-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+
+    &:checked+.js-form__checkbox-icon {
+        fill: $icon-bckg-hover;
+        background-color: $icon-bckg-hover;
+        background-image: url(../images/icon.svg/check.svg);
+        background-size: contain;
+        background-origin: border-box;
+    }
+}
