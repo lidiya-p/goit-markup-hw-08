@@ -1,9 +1,25 @@
 .buttons-list {
+    outline: invert;
     display: flex;
-    justify-content: center;
-
-    margin-bottom: 50px;
-}
+    
+        @media screen and (min-width: 320px) {
+            justify-content: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+    
+        @media screen and (min-width: 425px) {
+            justify-content: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 46px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            justify-content: center;
+        }
+    }
 
 .buttons-list__filter {
     padding: 6px 22px;
@@ -33,6 +49,31 @@
 
 }
 
-.buttons-list__item:not(:last-child) {
-    margin-right: 8px;
+.buttons-list__item {
+    @media screen and (max-width: 424px) {
+            margin-right: 8px;
+            margin-bottom: 15px;
+    
+            &:nth-child(n + 4) {
+                margin-bottom: 0;
+            }
+    
+            &:nth-child(4),
+            &:nth-child(5) {
+                margin: 0;
+            }
+        }
+    
+    @media screen and (min-width: 425px) {
+            margin-right: 8px;
+            margin-bottom: 15px;
+    
+            &:nth-child(n + 3) {
+                margin-bottom: 0;
+            }
+    
+            &:nth-child {
+                margin-right: 0;
+            }
+        }
 }

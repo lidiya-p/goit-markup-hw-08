@@ -1,38 +1,87 @@
 .clients {
-    padding: 94px 0;
+    // padding: 94px 0;
+    @media screen and (min-width: 320px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    
+    @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 }
 
-.clients__item:not(:last-child) {
-    margin-right: 30px;
+.clients-title {
+    @media screen and (min-width: 320px) {
+            font-size: 28px;
+            line-height: 1.17;
+        }
+    
+    @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            line-height: 1.16;
+        }
+}
+
+.clients__ssection-list {
+    gap: 30px;
+        width: 100%;
+    
+        @media screen and (min-width: 320px) {
+            display: flex;
+    
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            display: flex;
+    
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+}
+
+.clients__item {
+        fill: #afb1b8;
+        max-width: 100%;
+        width: 100%;
+        display: block;
+        height: auto;
+    
+        @media screen and (min-width: 320px) {
+            flex-basis: calc((100% - 30px) / 2);
+        }
+    
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 60px) / 3);
+        }
+}
+
+.clients__link {
+        height: 92px;
+    
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            border-color: $accent;
+        }
+    
+        &:focus .clients__logo,
+        &:hover .clients__logo {
+            fill: $accent;
+        }
 }
 
 .clients__logo {
     width: 106px;
     height: 60px;
-
-    fill: currentColor;
-}
-
-.clients__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 170px;
-    height: 92px;
-
-    color: $icon-fill;
-    background-color: $bcg-main;
-    border: 1px solid $icon-fill;
-    border-radius: 4px;
-
-    transition-property: color, border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        border-color: $icon-bckg-hover;
-        color: $icon-bckg-hover;
-    }
+   
+    fill: #afb1b8;
 }

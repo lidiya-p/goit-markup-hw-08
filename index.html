@@ -166,15 +166,27 @@
             <h2 class="title work__title">Чем мы занимаемся</h2>
             <ul class="section-list work__list">
                 <li class="work__item">
-                    <img src="./images/box1.jpg" alt="computer-work"  width="370" height="294"/>
+                    <img 
+                    srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x"
+                    src="./images/box1.jpg" 
+                    alt="computer-work"  
+                    width="370" height="294"/>
                     <p class="work__text">Десктопные приложения</p>
                 </li>   
                 <li class="work__item">
-                    <img src="./images/box2.jpg" alt="laptop-work" width="370" height="294"/>
+                    <img 
+                    srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x"
+                    src="./images/box2.jpg" 
+                    alt="laptop-work" 
+                    width="370" height="294"/>
                     <p class="work__text">Мобильные приложения</p>
                 </li>
                 <li class="work__item">
-                    <img src="./images/box3.jpg" alt="tablet-work" width="370" height="294"/>
+                    <img 
+                    srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x"
+                    src="./images/box3.jpg" 
+                    alt="tablet-work" 
+                    width="370" height="294"/>
                     <p class="work__text">Дизайнерские решения</p>
                 </li>
             </ul>
@@ -182,11 +194,15 @@
         </section>
         
         <section class="team">
-            <div class="container">
+            <div class="container team__container">
             <h2 class="title team__title">Наша команда</h2>
             <ul class="section-list team__section-list">
                 <li class="team__item">
-                    <img src="./images/img.jpg" alt="Product_Designer_specialist" width="270" height="260" />
+                    <img
+                    srcset="./images/img.jpg 1x, ./images/img-2x.jpg 2x" 
+                    src="./images/img.jpg" 
+                    alt="Product_Designer_specialist" 
+                    width="370" />
                     <div class="team__card">
                         <h3 class="team__name">Игорь Демьяненко</h3>
                         <p lang="en" class="team__position">Product Designer</p>
@@ -228,7 +244,11 @@
                 </li>
 
                 <li class="team__item">
-                    <img src="./images/img(1).jpg" alt="Frontend_Developer_specialist" width="270" height="260"/>
+                    <img 
+                    srcset="./images/img(1).jpg 1x, ./images/img(1)-2x.jpg 2x"
+                    src="./images/img(1).jpg" 
+                    alt="Frontend_Developer_specialist" 
+                    width="370" />
                     <div class="team__card">
                         <h3 class="team__name">Ольга Репина</h3>
                         <p lang="en" class="team__position">Frontend Developer</p>
@@ -270,7 +290,11 @@
                 </li>
 
                 <li class="team__item">
-                    <img src="./images/img(2).jpg" alt="Marketing_specialist" width="270" height="260"/>
+                    <img 
+                    srcset="./images/img(2).jpg 1x, ./images/img(2)-2x.jpg 2x"
+                    src="./images/img(2).jpg" 
+                    alt="Marketing_specialist" 
+                    width="370"/>
                     <div class="team__card">
                         <h3 class="team__name">Николай Тарасов</h3>
                         <p lang="en" class="team__position">Marketing</p>
@@ -312,7 +336,11 @@
                 </li>
 
                 <li class="team__item">
-                    <img src="./images/img(3).jpg" alt="UI_Designer_specialist" width="270" height="260"/>
+                    <img 
+                    srcset="./images/img(3).jpg 1x, ./images/img(3)-2x.jpg 2x"
+                    src="./images/img(3).jpg" 
+                    alt="UI_Designer_specialist" 
+                    width="370"/>
                     <div class="team__card">
                         <h3 class="team__name">Михаил Ермаков</h3>
                         <p lang="en" class="team__position">UI Designer</p>
@@ -408,6 +436,7 @@
 
     <footer class="page-footer">
         <div class="container page-footer__container">
+            <div class="flex-container">
             <div class="footer-contacts">
                 <a lang="en" href="./index.html" class="logo page-footer__logo"> <span class="logo__accent">Web</span>Studio</a>
             <!-- Скрыть заголовок через CSS -->
@@ -423,7 +452,7 @@
 
             <div class="join">
                 <span class="join__text">присоединяйтесь</span>
-                <ul class="list social">
+                <ul class="social join__social">
                 
                     <li class="social__item">
                         <a href="" class="social__link social__link--inverse">
@@ -458,16 +487,17 @@
                     </li>
                 </ul>
             </div>
+            </div>
 
             <div class="subscription">
                 <h2 class="subscription__title">Подпишитесь на рассылку</h2>
                 <form class="js-form subscription__js-form">
-                    
+            
                     <div class="subscription__form-field">
                         <input type="email" name="mail" class="subscription__input" id="mail-footer">
                         <label for="mail-footer" class="subscription__label">E-mail</label>
                     </div>
-                    
+            
                     <button type="submit" class="button subscription__button">Подписаться
                         <svg class="subscription__icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
@@ -475,9 +505,9 @@
                     </button>
                 </form>
             </div>
-        </div>
-
     </footer>
+
+
     <div class="menu js-menu-container" id="mobile-menu">
         <button type="button" class="menu__button menu__button--close js-close-menu">
             <svg width="40" height="40">
