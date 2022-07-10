@@ -22,10 +22,21 @@
     margin-bottom: 9px;
 }
 
-.contact-list__link {
-    color: rgba(255, 255, 255, 0.6);
-}
-
 .contact-list__text {
     color: $white-text;
+
+    &:hover,
+    &:focus {
+        color: $accent;
+    }
 }
+
+.contact-list__link {
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover,
+    &:focus {
+        color: $accent;
+    }
+}
+
