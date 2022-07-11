@@ -24,15 +24,17 @@
 
 .contact-list__text {
     color: $white-text;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
+    .contact-list__link:hover &,
+    .contact-list__link:focus &{
         color: $accent;
     }
 }
 
 .contact-list__link {
     color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {

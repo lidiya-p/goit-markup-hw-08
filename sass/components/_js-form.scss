@@ -101,16 +101,34 @@
     margin-bottom: 30px;
 }
 
+.js-form__checkbox-icon {
+    margin-right: 3px;
+}
+
 .js-form__checkbox-label {
     display: inline-block;
     margin-left: 8px;
-    line-height: 1.7;
+    // line-height: 1.7;
+    line-height: 14px;
+    // line-height: 1.2;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.7;
+    //     line-height: 24px;
+    }
 }
 
 .js-form__agreement-link {
-    line-height: 1.7;
+    // line-height: 1.7;
+    margin-left: 3px;
     text-decoration-line: underline;
     color: $accent
+
 }
 
 .js-form__checkbox-input {
